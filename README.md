@@ -7,7 +7,7 @@ Check the examples in "emails.txt" and "numbers.txt".
 
 Regex for numbers description:
 
-*-----*
+-------
 
 pattern = \+?[78](([\s-]|[({[])*\d{3}([\s-]|[)\]}])*\d{3}[\s-]*\d{2}[\s-]*\d{2})\b
 
@@ -22,16 +22,16 @@ pattern = \+?[78](([\s-]|[({[])*\d{3}([\s-]|[)\]}])*\d{3}[\s-]*\d{2}[\s-]*\d{2})
 [\s-] - starts with any space symbol (space or tab) or symbol "-"
 [({[] - There are numbers with brackes, such as "(", "{", "[". For example 7 (900) 800 70 61
 | - operator "OR". Numbers may contain both space symbols and brackets and etc.
-* - 0 or more repetitions left pattern.
+"*" - 0 or more repetitions left pattern.
 \d - numbers from 0 to 9
 {x} - count repetitions left pattern. \d{3} - code of RUS operator. For example, 495, 985 and etc.
 
-*-----*
+-------
 
 
 Regex for emails description:
 
-*-----*
+-------
 
 pattern = [-.\w]{1,25}@[-\w]{1,12}.[rucom]{2,3}
 
@@ -44,7 +44,7 @@ pattern = [-.\w]{1,25}@[-\w]{1,12}.[rucom]{2,3}
 .[rucom] - major part of emails ends with .ru or .com. This part of regex will be accepted even .ro and .co and etc. Therefore it needs some repair
 
 
-*-----*
+-------
 
 What do you need to do before using this scrypt:
 
