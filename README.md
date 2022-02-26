@@ -12,7 +12,9 @@ Regex for numbers description:
 pattern = \+?[78](([\s-]|[({[])*\d{3}([\s-]|[)\]}])*\d{3}[\s-]*\d{2}[\s-]*\d{2})\b
 
 \+ - escapes symbol "+". Number can starts with "+" and maybe not (+7 900 800 70 61 or 7 900 800 70 61)
+
 ? - 0 or 1 repetitions left pattern. Symbol "+" can be exists and maybe not
+
 [7, 8] - one of the symbols in list. Russian numbers can starts with number "7" or "8"
 
 ([\s-]|[({[])*:
@@ -34,8 +36,11 @@ Regex for emails description:
 pattern = [-.\w]{1,25}@[-\w]{1,12}.[rucom]{2,3}
 
 [-.\w] - email may consist symbols "-" or "." and letters. For example, emample.ex1@gmail.com
+
 {1,25} - limitations of email contained characters
+
 @ - no comments
+
 .[rucom] - major part of emails ends with .ru or .com. This part of regex will be accepted even .ro and .co and etc. Therefore it needs some repair
 
 
