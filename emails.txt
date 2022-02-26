@@ -1,0 +1,3 @@
+example1@gmail.com
+example2@yandex.ru
+example3@mail.ru
