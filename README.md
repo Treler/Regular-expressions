@@ -1,5 +1,3 @@
-God damn.
-
 This scrypts can help you with find emails and RUS numbers using regular expressions.
 In my opinion, this reg exs so powerful, however you can modified them.
 
